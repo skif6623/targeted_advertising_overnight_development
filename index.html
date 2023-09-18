@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IMBA</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto:wght@300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<a class="header-logo" href="/">
+					<img class="header-image" src="./images/logo.jpg" alt="imba logo" />
+				</a>
+				<div class="header-wrapper">
+					<nav class="nav">
+						<ul class="nav-list">
+							<li class="nav-item entry">
+								<a class="nav-link" href="/">Вхід</a>
+							</li>
+							<li class="nav-item register">
+								<a class="nav-link" href="/">Реєстрація</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="menu-btn" type="button">
+						<svg width="35" height="24">
+							<use href="./images/sprite.svg#icon-burger"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="blur"></div>
+				<div class="zakarluka"></div>
+				<button class="hero-btn online" type="button">online</button>
+				<button class="hero-btn top" type="button">Хіт продаж</button>
+				<p class="hero-bg-text">курс</p>
+
+				<h1 class="hero-title">Таргетована реклама</h1>
+				<ul class="hero-feature-list">
+					<li class="hero-feature-item">
+						<svg class="hero-check-icon" width="16" height="16">
+							<use href="./images/sprite.svg#icon-check"></use>
+						</svg>
+						<p class="hero-feature">Працевлаштування для випускників</p>
+					</li>
+					<li class="hero-feature-item">
+						<svg class="hero-check-icon" width="16" height="16">
+							<use href="./images/sprite.svg#icon-check"></use>
+						</svg>
+						<p class="hero-feature">Найновіші програми для 2022 року +</p>
+					</li>
+				</ul>
+
+				<ul class="description-list">
+					<li class="description-item">
+						<p class="description-text">Старт курсу:</p>
+						<p class="description-title">21 березня 2022</p>
+					</li>
+					<li class="description-item">
+						<p class="description-text">Тривалість:</p>
+						<p class="description-title">5 тижнів</p>
+					</li>
+					<li class="description-item">
+						<p class="description-text">Рівень знань:</p>
+						<p class="description-title">Продвинутий</p>
+					</li>
+				</ul>
+				<p class="old-price">20 000 грн</p>
+				<p class="current-price"
+					>Вартість: <span class="big">16 000<span class="sup">грн</span></span></p
+				>
+				<button class="hero-big-btn" type="button">Записатись на курс</button>
+				<p class="hero-text">Залишилось <b>3 місця</b> на курсі</p>
+			</section>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,298 @@
+.container {
+	padding: 0 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header {
+	height: 61px;
+	padding: 13px 0;
+}
+
+.header-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.header-logo {
+	cursor: pointer;
+}
+
+.header-image {
+	width: 60px;
+	height: 35px;
+}
+
+.nav {
+	margin-right: 20px;
+}
+
+.nav-list {
+	display: flex;
+}
+
+.nav-link {
+	color: #2b2b2a;
+	line-height: 21px;
+	text-decoration: none;
+}
+
+.entry {
+	padding-right: 5px;
+	border-right: 2px solid #2b2b2a;
+}
+
+.register {
+	padding-left: 5px;
+}
+
+.menu-btn {
+	padding: 0;
+
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+	position: relative;
+	z-index: 99;
+	overflow: hidden;
+
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 168px;
+	background-image: url(../images/hero-image-mobile.jpg);
+	background-color: #2b2b2a;
+	background-repeat: no-repeat;
+}
+
+.blur {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 637.507px;
+	height: 817.64px;
+
+	background-image: url(../images/blur-mobile.png);
+	background-repeat: no-repeat;
+}
+
+.zakarluka {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	width: 50px;
+	height: 72px;
+	background-image: url(../images/zakarluka.png);
+}
+
+.hero-btn {
+	padding: 5px 20px;
+	margin-bottom: 85px;
+
+	color: #2b2b2b;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 27px;
+
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: background-color 250ms ease, color 250ms ease;
+}
+
+.online {
+	margin-right: 15px;
+
+	text-transform: uppercase;
+	background-color: #59f97c;
+}
+
+.online:hover {
+	background-color: #edc407;
+	color: white;
+}
+
+.top {
+	background-color: #edc407;
+}
+
+.top:hover {
+	background-color: #59f97c;
+	color: white;
+}
+
+.hero-bg-text {
+	position: absolute;
+	top: 180px;
+	left: -15px;
+	z-index: -1;
+
+	text-transform: uppercase;
+	color: #3e3e3c;
+	font-size: 133.228px;
+	font-weight: 900;
+	line-height: 140%; /* 186.519px */
+	letter-spacing: 17px;
+}
+
+.hero-title {
+	margin-bottom: 26px;
+	max-width: 294px;
+	color: #fff;
+
+	font-family: Inter;
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 43px;
+}
+
+.hero-feature-list {
+	margin-bottom: 50px;
+}
+
+.hero-feature-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 13px;
+}
+
+.hero-feature-item:last-child {
+	margin-bottom: 0;
+}
+
+.hero-check-icon {
+	margin-right: 10px;
+}
+
+.hero-feature {
+	width: 198px;
+
+	color: #fff;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.description-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.description-item {
+	padding-left: 15px;
+	border-left: 1px solid #e0ff00;
+	margin-bottom: 13px;
+}
+
+.description-item:first-child {
+	margin-right: 47px;
+}
+
+.description-item:last-child {
+	margin-bottom: 0;
+}
+
+.description-text {
+	margin-bottom: 3px;
+
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.description-title {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 27px;
+}
+
+.old-price {
+	position: relative;
+	left: 50%;
+	transform: translateX(-40%);
+	display: inline-block;
+
+	color: #b7b7b7;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 33px;
+}
+
+.old-price:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+
+	display: block;
+	width: 111px;
+	height: 1px;
+
+	background-color: #b7b7b7;
+	transform: translateY(-50%);
+}
+
+.current-price {
+	margin-bottom: 17px;
+	color: #fff;
+
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 33px;
+}
+
+.big {
+	position: relative;
+
+	font-size: 50px;
+	font-weight: 900;
+	line-height: 60px;
+}
+
+.current-price .sup {
+	position: absolute;
+
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+.hero-big-btn {
+	width: 100%;
+	margin-bottom: 8px;
+	padding: 20px 0;
+
+	text-transform: uppercase;
+	color: #2b2b2a;
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+
+	background-color: #e0ff00;
+	border: none;
+	border-radius: 15px;
+
+	transition: background-color 250ms ease, color 250ms ease;
+	cursor: pointer;
+}
+
+.hero-big-btn:hover {
+	background-color: #c8e014;
+	color: #fff;
+}
+
+.hero-text {
+	margin-bottom: 60px;
+
+	color: #fff;
+	text-align: center;
+	line-height: 21px;
+}
