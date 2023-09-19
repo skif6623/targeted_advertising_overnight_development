@@ -3,13 +3,24 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media screen and (min-width: 1920px) {
+		padding: 0 20px;
+	}
 }
 
 .header {
-	max-width: 390px;
-	height: 61px;
 	margin: 0 auto;
 	padding: 13px 0;
+
+	@media screen and (max-width: 1919px) {
+		max-width: 390px;
+		height: 61px;
+	}
+
+	@media screen and (min-width: 1920px) {
+		padding: 15px 0;
+	}
 }
 
 .header-wrapper {
@@ -24,29 +35,106 @@
 .header-image {
 	width: 60px;
 	height: 35px;
+
+	@media screen and (min-width: 1920px) {
+		width: 110px;
+		height: 65px;
+	}
 }
 
 .nav {
-	margin-right: 20px;
+	@media screen and (max-width: 1919px) {
+		display: none;
+	}
+	@media screen and (min-width: 1920px) {
+		margin-right: 143px;
+	}
 }
 
 .nav-list {
 	display: flex;
+	align-items: center;
+	gap: 55px;
 }
 
 .nav-link {
+	@media screen and (min-width: 1920px) {
+		text-decoration: none;
+		color: #2b2b2a;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+.nav-link:hover {
+	@media screen and (min-width: 1920px) {
+		color: #59f97c;
+	}
+}
+
+.nav-link:hover svg {
+	@media screen and (min-width: 1920px) {
+		fill: #59f97c;
+	}
+}
+
+.header-phone {
+	display: none;
+	@media screen and (min-width: 1920px) {
+		display: block;
+		margin-right: 143px;
+
+		text-decoration: none;
+		color: #2b2b2a;
+		font-family: Inter;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 36px;
+	}
+}
+
+.header-phone:hover {
+	@media screen and (min-width: 1920px) {
+		color: #edc407;
+	}
+}
+
+.header-login {
+	width: 111px;
+	margin-right: 26px;
+	padding: 0;
+
 	color: #2b2b2a;
+	font-size: 14px;
 	line-height: 21px;
-	text-decoration: none;
+
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+	@media screen and (min-width: 1920px) {
+		flex-shrink: 0;
+		margin-right: 0;
+		width: 209px;
+		height: 55px;
+
+		color: #ffffff;
+		font-size: 16px;
+		line-height: 24px;
+
+		background-color: #2b2b2a;
+		border-radius: 15px;
+
+		transition: background-color 250ms ease, color 250ms ease;
+	}
 }
 
-.entry {
-	padding-right: 5px;
-	border-right: 2px solid #2b2b2a;
-}
-
-.register {
-	padding-left: 5px;
+.header-login:hover {
+	color: #59f97c;
+	@media screen and (min-width: 1920px) {
+		background-color: #d6f012;
+		color: #2b2b2a;
+	}
 }
 
 .menu-btn {
@@ -55,12 +143,22 @@
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+
+	@media screen and (min-width: 1920px) {
+		display: none;
+	}
+}
+
+.menu-btn:hover svg {
+	fill: #59f97c;
 }
 
 /* MAIN */
 main {
-	max-width: 390px;
-	margin: 0 auto;
+	@media screen and (max-width: 1919px) {
+		max-width: 390px;
+		margin: 0 auto;
+	}
 }
 
 /* HERO */
@@ -77,6 +175,15 @@ main {
 	background-image: url(../images/hero-image-mobile.jpg);
 	background-color: #2b2b2a;
 	background-repeat: no-repeat;
+
+	@media screen and (min-width: 1920px) {
+		padding-left: 375px;
+		padding-right: 375px;
+		padding-top: 102px;
+		padding-bottom: 99px;
+		background-image: url(../images/hero-image-desktop.jpg);
+		background-position: top right;
+	}
 }
 
 .blur {
@@ -84,11 +191,32 @@ main {
 	top: 0;
 	left: 0;
 	z-index: -1;
-	width: 637.507px;
+	width: 390px;
 	height: 817.64px;
 
 	background-image: url(../images/blur-mobile.png);
 	background-repeat: no-repeat;
+
+	@media screen and (min-width: 1920px) {
+		left: 250px;
+		right: 0;
+		width: 1169.658px;
+		height: 750px;
+		background-image: url(../images/blur-desktop.png);
+	}
+}
+
+.blur-bottom {
+	@media screen and (min-width: 1920px) {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		width: 1000px;
+		height: 200px;
+
+		background-image: url(../images/blur-bottom-desktop.png);
+	}
 }
 
 .zakarluka-yellow {
@@ -100,6 +228,12 @@ main {
 	height: 90px;
 
 	background-image: url(../images/zakarluka-yellow.png);
+
+	@media screen and (min-width: 1920px) {
+		width: 100px;
+		height: 120px;
+		background-image: url(../images/zakarluka-yellow-desktop.png);
+	}
 }
 .zakarluka-top {
 	position: absolute;
@@ -110,6 +244,15 @@ main {
 	height: 80px;
 
 	background-image: url(../images/zakarluka-top.png);
+
+	@media screen and (min-width: 1920px) {
+		top: 0;
+		left: 284px;
+
+		width: 100px;
+		height: 85px;
+		background-image: url(../images/zakarluka-top-desktop.png);
+	}
 }
 
 .zakarluka-center {
@@ -120,6 +263,10 @@ main {
 	width: 50px;
 	height: 45px;
 	background-image: url(../images/zakarluka-center.png);
+
+	@media screen and (min-width: 1920px) {
+		display: none;
+	}
 }
 
 .zakarluka {
@@ -130,6 +277,16 @@ main {
 	width: 50px;
 	height: 72px;
 	background-image: url(../images/zakarluka.png);
+
+	@media screen and (min-width: 1920px) {
+		width: 100px;
+		height: 140px;
+
+		left: 0;
+		bottom: 0;
+
+		background-image: url(../images/zakarluka-desktop.png);
+	}
 }
 
 .hero-btn {
@@ -145,6 +302,10 @@ main {
 	border-radius: 30px;
 	cursor: pointer;
 	transition: background-color 250ms ease, color 250ms ease;
+
+	@media screen and (min-width: 1920px) {
+		margin-bottom: 66px;
+	}
 }
 
 .online {
@@ -168,6 +329,14 @@ main {
 	color: white;
 }
 
+.hero-title-wrapper {
+	margin-bottom: 26px;
+	@media screen and (min-width: 1920px) {
+		position: relative;
+		margin-bottom: 30px;
+	}
+}
+
 .hero-bg-text {
 	position: absolute;
 	top: 180px;
@@ -180,10 +349,14 @@ main {
 	font-weight: 900;
 	line-height: 140%; /* 186.519px */
 	letter-spacing: 17px;
+
+	@media screen and (min-width: 1920px) {
+		top: -100px;
+		left: -5px;
+	}
 }
 
 .hero-title {
-	margin-bottom: 26px;
 	max-width: 294px;
 	color: #fff;
 
@@ -191,16 +364,32 @@ main {
 	font-size: 36px;
 	font-weight: 900;
 	line-height: 43px;
+
+	@media screen and (min-width: 1920px) {
+		max-width: 600px;
+
+		font-size: 50px;
+		font-weight: 900;
+		line-height: 60px;
+	}
 }
 
 .hero-feature-list {
 	margin-bottom: 50px;
+
+	@media screen and (min-width: 1920px) {
+		margin-bottom: 75px;
+	}
 }
 
 .hero-feature-item {
 	display: flex;
 	align-items: center;
 	margin-bottom: 13px;
+
+	@media screen and (min-width: 1920px) {
+		margin-bottom: 15px;
+	}
 }
 
 .hero-feature-item:last-child {
@@ -217,22 +406,42 @@ main {
 	color: #fff;
 	font-size: 18px;
 	line-height: 27px;
+	@media screen and (min-width: 1920px) {
+		width: 320px;
+	}
 }
 
 .description-list {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 50px;
+
+	@media screen and (min-width: 1920px) {
+		position: absolute;
+		bottom: 132px;
+		left: 695px;
+
+		flex-wrap: nowrap;
+		gap: 50px;
+		margin-bottom: 0px;
+	}
 }
 
 .description-item {
 	padding-left: 15px;
 	border-left: 1px solid #e0ff00;
 	margin-bottom: 13px;
+
+	@media screen and (min-width: 1920px) {
+		margin-bottom: 0;
+	}
 }
 
 .description-item:first-child {
 	margin-right: 47px;
+	@media screen and (min-width: 1920px) {
+		margin-right: 0;
+	}
 }
 
 .description-item:last-child {
@@ -254,6 +463,11 @@ main {
 	line-height: 27px;
 }
 
+.price-wrapper {
+	@media screen and (min-width: 1920px) {
+	}
+}
+
 .old-price {
 	position: relative;
 	left: 50%;
@@ -265,6 +479,10 @@ main {
 	font-size: 22px;
 	font-weight: 400;
 	line-height: 33px;
+
+	@media screen and (min-width: 1920px) {
+		left: 170px;
+	}
 }
 
 .old-price:after {
@@ -287,6 +505,10 @@ main {
 	font-size: 22px;
 	font-weight: 400;
 	line-height: 33px;
+
+	@media screen and (min-width: 1920px) {
+		margin-bottom: 29px;
+	}
 }
 
 .big {
@@ -322,6 +544,10 @@ main {
 
 	transition: background-color 250ms ease, color 250ms ease;
 	cursor: pointer;
+
+	@media screen and (min-width: 1920px) {
+		width: 275px;
+	}
 }
 
 .hero-big-btn:hover {
@@ -333,12 +559,21 @@ main {
 	color: #fff;
 	text-align: center;
 	line-height: 21px;
+
+	@media screen and (min-width: 1920px) {
+		width: 275px;
+	}
 }
 
 /* FEATURES */
 
 .features {
 	padding: 60px 38px;
+	@media screen and (min-width: 1920px) {
+		width: 721px;
+		margin: 0 auto;
+		padding: 160px 0 145px 0;
+	}
 }
 
 .features-title {
@@ -349,12 +584,22 @@ main {
 	font-size: 30px;
 	font-weight: 900;
 	line-height: 36px;
+
+	@media screen and (min-width: 1920px) {
+		margin-bottom: 60px;
+
+		font-size: 40px;
+		line-height: 48px;
+	}
 }
 
 .features-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	@media screen and (min-width: 1920px) {
+		gap: 60px;
+	}
 }
 
 .features-item {
@@ -363,6 +608,25 @@ main {
 	align-items: center;
 	flex-direction: column;
 	margin-bottom: 30px;
+
+	@media screen and (min-width: 1920px) {
+		width: 200px;
+		margin-bottom: 0;
+	}
+}
+
+.features-item:hover svg {
+	fill: #edc407;
+}
+
+.features-item:hover p {
+	color: #edc407;
+}
+
+.features-hidden {
+	@media screen and (min-width: 1920px) {
+		display: none;
+	}
 }
 
 .features-text {
@@ -372,4 +636,8 @@ main {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
+
+	@media screen and (min-width: 1920px) {
+		max-width: 150px;
+	}
 }

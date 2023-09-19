@@ -105,5 +105,8 @@
 <symbol id="icon-check" viewBox="0 0 32 32">
 <path fill="none" stroke="#e0ff00" style="stroke: var(--color1, #e0ff00)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="6" d="M4 16.5l9.5 9.5 14.5-24"></path>
 </symbol>
+<symbol id="arrow" viewBox="0 0 75 32">
+<path d="M37.333 32l-32.332-32h64.663l-32.332 32z"></path>
+</symbol>
 </defs>
 </svg>
